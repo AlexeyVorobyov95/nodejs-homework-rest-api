@@ -8,6 +8,9 @@
     "lint": "eslint **/*.js",
     "lint:fix": "eslint --fix **/*.js"
   },
+  "engines": {
+    "node": ">=14.20.1"
+  },
   "type": "module",
   "dependencies": {
     "cors": "2.8.5",
