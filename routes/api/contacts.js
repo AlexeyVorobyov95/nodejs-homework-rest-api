@@ -1,7 +1,7 @@
 import { Router } from "express";
 import { controlFun } from "../../controllers/contacts.js";
 import { validateBody } from "../../middlewares/index.js";
-import { addSchema } from "../../shcemas/contacts.js";
+import { addSchema } from "../../sсhemas/contacts.js";
 
 const router = Router();
 
