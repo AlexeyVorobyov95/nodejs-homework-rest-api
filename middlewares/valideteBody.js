@@ -3,6 +3,7 @@ import { HttpError } from "../helpers/index.js";
 const validateBody = (schema) => {
   const func = (req, res, next) => {
     const data = req.body;
+    console.log(data)
     const { error } = schema.validate(data);
     if (error) {
       throw HttpError(400, error.message);
