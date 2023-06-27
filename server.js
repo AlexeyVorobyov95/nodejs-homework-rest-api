@@ -1,13 +1,13 @@
 import app from "./app.js";
 import mongoose from "mongoose";
 
-const DB_HOST =
-  "mongodb+srv://Alexey:jLLsOqtxgNKPiBO0@cluster0.1sds29x.mongodb.net/db-contacts?retryWrites=true&w=majority";
+
+const { DB_HOST, PORT = 3000 } = process.env;
 
 mongoose
   .connect(DB_HOST)
   .then(() => {
-    app.listen(3000, () => {
+    app.listen(PORT, () => {
       console.log("Database connection successful");
     });
   })
